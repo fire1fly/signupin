@@ -41,10 +41,9 @@
     die();
   }
 
-  $login_check = mysqli_query($db, "SELECT * FROM `users` WHERE `login` = '$login';");
-  $email_check = mysqli_query($db, "SELECT * FROM `users` WHERE `email` = '$email';");
+  $login_check = mysqli_query($db, "SELECT * FROM `users` WHERE `login` = '$login' OR `email` = '$email';");
   
-  if((mysqli_num_rows($login_check) == 0) && (mysqli_num_rows($email_check) == 0)) {
+  if(mysqli_num_rows($login_check) == 0) {
     if ($pass === $pass_confirm) {
       $path_to_avatar = 'uploads/' . time() . $_FILES['avatar']['name'];
       if(!move_uploaded_file($_FILES['avatar']['tmp_name'], '../' . $path_to_avatar )) {
