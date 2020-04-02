@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Monserrat, sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 480px; 
+  padding: 30px;
+  color: #2D373C;
+  background-color: #F9F9F9;
+  border-radius: 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #F77A05;
+  outline: none;
+  background-color: #f9f9f9;
+  transition: 0.4s;
+}
+
+._bg-error {
+  background-color: #EEAFA6;
+}
+button {
+  margin: 15px 0 ;
+  padding: 10px;
+  font-size: 18px;
+  font-family: Monserrat, sans-serif;
+  border: none;
+  border-radius: 5px;
+  background-color: #e3e3e3;
+  cursor: pointer;
+  transition: .5s;
+}
+button:hover {
+  transform: translateY(-5px);
+}
+button:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+.msg {
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.msg_success {
+  color: #fff;
+  font-weight: bold;
+  background-color: #00B75A;
+}
+.msg_error {
+  background-color: #EEAFA6;
+}
+
+/* Профиль */
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.profile {
+  width: 50%;
+  height: 400px;
+  background-color: #EEEEEE;
+  border-radius: 10px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 50px;
+  background-color: #F77A05;
+}
+.top-text {
+  margin: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+.top-text a {
+  color: inherit;
+}
+.content {
+  display: flex;
+  overflow: hidden;
+}
+
+.content-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+.content-avatar__wrap {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.content-avatar__wrap img { 
+  width: 345px;
+  height: 345px;
+}
+
+.content-info {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 28px;
+  color: #2D373C;
+}
+.content-info-text {
+  /* margin-bottom: 20px; */
+}
