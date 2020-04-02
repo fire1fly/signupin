@@ -58,7 +58,7 @@
 
       $pass_hash = password_hash($pass, PASSWORD_DEFAULT);
 
-      mysqli_query($db, "INSERT INTO `users` (`id`, `full_name`, `login`, `email`, `password`, `avatar`) VALUES (NULL, '$full_name', '$login', '$email', '$pass_hash', '$path_to_avatar')");
+      mysqli_query($db, "INSERT INTO `users` (`full_name`, `login`, `email`, `password`, `avatar`) VALUES ('$full_name', '$login', '$email', '$pass_hash', '$path_to_avatar')");
 
       $response = [
         'status'  => true,
